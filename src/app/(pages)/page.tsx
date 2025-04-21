@@ -1,6 +1,6 @@
-import Container from "@/components/shared/container"
+// import Container from "@/components/shared/container"
 import Header from "@/components/shared/header"
-import Image from "next/image"
+// import Image from "next/image"
 
 export default function Home() {
 	return (
