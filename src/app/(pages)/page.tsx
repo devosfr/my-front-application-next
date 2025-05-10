@@ -1,12 +1,10 @@
-// import Container from "@/components/shared/container"
+
 import Curriculum from "@/components/curriculum"
 import Main from "@/components/landing/main"
 import { getTecnologies } from "../../../functions/tecnologies";
 import { getProjects } from "../../../functions/projects";
 import Container from "@/components/shared/container";
 import Projects from "@/components/projects";
-// import Header from "@/components/shared/header"
-// import Image from "next/image"
 
 export default async function Home() {
     const technologies = await getTecnologies();
@@ -23,7 +21,6 @@ export default async function Home() {
             </div>
         )
     } else {
-        // Handle the case where technologies is an empty array
         return <div>No data available</div>
     }
 }

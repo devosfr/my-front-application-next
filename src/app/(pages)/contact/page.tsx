@@ -4,7 +4,7 @@ import 'primereact/resources/themes/lara-light-indigo/theme.css'; // tema
 import 'primereact/resources/primereact.min.css'; // componentes
 import 'primeicons/primeicons.css'; // ícones
 
-export default async function ProjectPage(props: {params: Promise<{id: string}>}){
+export default async function ProjectPage(){
  
     return <div className="bg-black">
         <Header />

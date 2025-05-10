@@ -73,9 +73,10 @@ export async function getProjects() {
   }
 }
 
-export async function getProjectById(id: string): Promise<Project | null> {
+export async function getProjectById(id: string): Promise<{ all: Project[], getEmphasis: Project[] }> {
 
   console.log(baseURL);
+  console.log(id);
 
   try {
     const projects: Project[] = [
@@ -97,6 +98,9 @@ export async function getProjectById(id: string): Promise<Project | null> {
     debugger;
 
     console.error('Erro ao buscar usuários:', error);
-    return [];
+    return {
+      all: [],
+      getEmphasis: [],
+    }
   }
 }
