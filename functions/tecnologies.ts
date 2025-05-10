@@ -50,7 +50,7 @@ export async function getTecnologies() {
             getEmphasis: response.filter((item) => item.emphasis),
         }
     } catch (error) {
-        debugger;
+
 
         console.error('Erro ao buscar usuários:', error);
         return [];

@@ -3,7 +3,7 @@ const baseURL = process.env.NEXT_PUBLIC_API_URL;
 
 export async function getUsers() {
     console.log(baseURL);
-    debugger;
+
     try {
         const response = await fetch(`${baseURL}/users`);
         // const response = await fetch('https://apinodeexpress-production.up.railway.app/users');

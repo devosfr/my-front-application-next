@@ -9,7 +9,7 @@ import Projects from "@/components/projects";
 export default async function Home() {
     const technologies = await getTecnologies();
     const porjects = await getProjects();
-    debugger;
+    
     if ('all' in technologies && 'all' in porjects) {
         return (
             <div>

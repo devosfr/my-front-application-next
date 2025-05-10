@@ -4,7 +4,7 @@ const baseURL = process.env.NEXT_PUBLIC_API_URL;
 // whatsappClient.ts
 
 export async function sendWhatsAppMessage(toPhoneNumber: string, message: string) {
-    debugger;
+
     const PHONE_NUMBER_ID = 'YOUR_PHONE_NUMBER_ID';
     const ACCESS_TOKEN = 'YOUR_TEMPORARY_ACCESS_TOKEN'; // ⚠️ NÃO use isso em produção!
 

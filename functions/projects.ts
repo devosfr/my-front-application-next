@@ -66,7 +66,7 @@ export async function getProjects() {
       getEmphasis: projects.filter((item) => item.emphasis),
     }
   } catch (error) {
-    debugger;
+
 
     console.error('Erro ao buscar usuários:', error);
     return [];
@@ -92,10 +92,10 @@ export async function getProjectById(id: string): Promise<{ all: Project[], getE
 
     return {
       all: projects,
-      getEmphasis: response.filter((item) => item.emphasis),
+      getEmphasis: projects.filter((item) => item.emphasis),
     }
   } catch (error) {
-    debugger;
+
 
     console.error('Erro ao buscar usuários:', error);
     return {
