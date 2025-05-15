@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const useToast = () => {
-    const [toast, setToast] = useState(null);
+    const [toast, setToast] = useState<string | null>(null);
 
     const showToast = (message: string) => {
         setToast(message);
