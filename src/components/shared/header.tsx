@@ -38,7 +38,7 @@ export default function Header() {
           <Menu />
         </div>
         <div className="hidden sm:flex items-center">
-          <Button className='absolute top-0 right-8' icon={`${theme === 'light' ? 'pi pi-moon' : 'pi pi-sun'}`} severity="contrast" variant="text" rounded aria-label='Thema dark or light' onClick={toggleTheme} />
+          <Button className='absolute top-0 right-8' icon={`${theme === 'light' ? 'pi pi-moon' : 'pi pi-sun'}`} severity="contrast" rounded aria-label='Thema dark or light' onClick={toggleTheme} />
 
           <Link href="https://www.linkedin.com/in/oseias-freitas/"
             target="_blank"
