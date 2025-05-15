@@ -12,7 +12,7 @@ export default async function Home() {
     
     if ('all' in technologies && 'all' in porjects) {
         return (
-            <div>
+            <div >
                 <Main tecnologies={technologies.getEmphasis} />
                 <Container className="p-16 flex flex-col items-center gap-10">
                     <Projects title="Alguns projetos em que tenho trabalhado" value={porjects.all} />

@@ -22,7 +22,7 @@ function MenuItem(props:{
 }){
     return (
         <Link href={props.href} target={props.newTab ? "_blank" : "_self"} >
-            <span className={`flex items-center gap-2 text-sm border-red-600 hover:text-white
+            <span className={`flex items-center gap-2 text-sm border-[#ddad29] hover:text-white
                 ${props.selected ? "border-b-4 text-white" : "text-zinc-400"}       
                 `}>{props.children}</span>
         </Link>
