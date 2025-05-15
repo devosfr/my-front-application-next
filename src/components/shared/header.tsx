@@ -10,7 +10,7 @@ import 'primereact/resources/primereact.min.css'; // componentes
 import 'primeicons/primeicons.css'; // ícones
 
 export default function Header() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
 
   useEffect(() => {
     const stored = localStorage.getItem('theme') as 'light' | 'dark';
