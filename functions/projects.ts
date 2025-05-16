@@ -44,21 +44,13 @@ export async function getProjects() {
         image: "/portfolio/web/eportfolios.jpg",
         link: 'https://www.obitec.com.br/products/e-portfolio'
       },
-
-      // {
-      //   id: 4,
-      //   name: 'WS Veiculos',
-      //   emphasis: true,
-      //   image: "/portfolio/web/ws-veiculos.jpg",
-      //   link: 'https://devosfr.github.io/WSVeiculos-Front/'
-      // },
-      // {
-      //   id: 5,
-      //   name: 'WS Veiculos',
-      //   emphasis: true,
-      //   image: "/portfolio/web/ws-veiculos.jpg",
-      //   link: 'https://devosfr.github.io/WSVeiculos-Front/'
-      // },
+      {
+        id: 6,
+        name: 'Eportfolios',
+        emphasis: true,
+        image: "/portfolio/web/savel.jpg",
+        link: 'http://savelcaminhoes.com.br'
+      },
     ]
 
     return {
