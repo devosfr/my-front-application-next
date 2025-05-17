@@ -27,21 +27,39 @@ export async function getTecnologies() {
             },
             {
                 id: 5,
-                name: 'Typescript',
-                emphasis: true,
-                image: "/typescript.png"
-            },
-            {
-                id: 6,
                 name: 'Nuxtjs',
                 emphasis: true,
                 image: "/nuxt.png"
             },
             {
-                id: 7,
+                id: 6,
                 name: 'Flutter',
                 emphasis: true,
                 image: "/flutter.png"
+            },
+            {
+                id: 7,
+                name: 'Typescript',
+                emphasis: true,
+                image: "/typescript.png"
+            },
+            {
+                id: 8,
+                name: 'Javascript',
+                emphasis: true,
+                image: "/javascript.svg"
+            },
+            {
+                id: 9,
+                name: 'Html5',
+                emphasis: true,
+                image: "/html5.svg"
+            },
+            {
+                id: 10,
+                name: 'Css3',
+                emphasis: true,
+                image: "/css3.svg"
             },
         ]
 

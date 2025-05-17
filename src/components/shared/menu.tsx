@@ -9,7 +9,7 @@ export default  function Menu() {
             <MenuItem href="/" selected={path === "/" }>Home</MenuItem>
             {/* <MenuItem href="/project/1" selected={path.startsWith("/project")}>Projetos</MenuItem>   */}
             {/* <MenuItem href="/projetos" selected={false} newTab={true}>Contato</MenuItem>   */}
-            <MenuItem href="/contact" selected={false}>Contato</MenuItem>  
+            <MenuItem href="#contact" selected={false}>Contato</MenuItem>  
         </nav>
     )
 }

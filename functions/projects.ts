@@ -46,7 +46,7 @@ export async function getProjects() {
       },
       {
         id: 6,
-        name: 'Eportfolios',
+        name: 'Savel',
         emphasis: true,
         image: "/portfolio/web/savel.jpg",
         link: 'http://savelcaminhoes.com.br'
