@@ -7,17 +7,34 @@ import { getProjects } from "../../../functions/projects"
 import Container from "@/components/shared/container"
 import Projects from "@/components/projects"
 import { useEffect, useState } from "react"
+import { Technology } from "@/types/technology"
+import { Project } from "@/types/project"
 
 export default function Home() {
     function sendMail(){
         window.location.href = "mailto:oseiasdfreitas@gmail.com";
         }
-	const [data, setData] = useState<{ technologies: any; projects: any } | null>(null)
+	const [data, setData] = useState<{
+		technologies: {
+			all: Technology[];
+			getEmphasis: Technology[];
+		};
+		projects: {
+			all: Project[];
+			getEmphasis: Project[];
+		};
+	} | null>(null)
 
 	useEffect(() => {
 		const fetchData = async () => {
 			const technologies = await getTecnologies()
 			const projects = await getProjects()
+			
+			if (Array.isArray(technologies) || Array.isArray(projects)) {
+				console.error('Error fetching data');
+				return;
+			}
+			
 			setData({ technologies, projects })
 		}
 		fetchData()
